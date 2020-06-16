@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8a49f799c566fb9d638f85732e51b079fb91fe34" datatype="html">
+        <source>Add Family</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="072ef0a8f6919d9923ee220e7df9aa9889ba5824" datatype="html">
+        <source>
+    Benefits Dashboard
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/toolbar/toolbar.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/family/family.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="174aeff57250511626633d55c14b69b753f4ed42" datatype="html">
+        <source>Employee</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/family/family.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="10ed9c49834086d11c5c79604ae7c7bd7dd74b57" datatype="html">
+        <source>Dependent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/family/family.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a178ad231c4afabe7e0db76664490d715aaaf775" datatype="html">
+        <source> Total:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/family/family.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

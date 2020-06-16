@@ -1,0 +1,41 @@
+<div *ngIf="family">
+    <mat-toolbar color="primary">
+        {{family.name}}
+        <span class="spacer"></span>
+        <button mat-button (click)="addFamilyMember()">
+            <mat-icon aria-hidden="false" aria-label="Add family member">add</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <mat-card>
+        <mat-card-content>
+            <div class="row" *ngFor="let member of family.members">
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput placeholder="Name" [(ngModel)]="member.name" (blur)="onChange()"
+                            i18n-placeholder />
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <mat-select [(ngModel)]="member.type" (ngModelChange)="onChange()">
+                            <!--No for loop to translate easier-->
+                            <mat-option [value]="personTypes[0]" i18n>Employee</mat-option>
+                            <mat-option [value]="personTypes[1]" i18n>Dependent</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-4 total">
+                    {{member.deduction | currency}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 total">
+                    <span i18n> Total:</span>
+                    {{family.totalDeduction | currency}}
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <br />
+</div>

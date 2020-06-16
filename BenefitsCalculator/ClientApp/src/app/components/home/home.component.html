@@ -1,0 +1,12 @@
+<div>
+  <mat-form-field>
+    <input matInput placeholder="Family Name" [(ngModel)]="familyName" />
+  </mat-form-field>
+  <button mat-button color="accent" (click)="addFamily()" i18n>Add Family</button>
+  <app-family *ngFor="let family of families; let i = index" [(family)]="families[i]" (change)="recalculate()"></app-family>
+  <div class="row">
+    <div class="col-12 total">
+      Total Cost: {{grandTotal | currency}}
+    </div>
+  </div>
+</div>
